@@ -2,8 +2,8 @@
 
 using namespace std;
 
-                                                // <---    CHEAK CYCLE DETECTION IN UNDIRECTED GRAPH ---->
-                                                // <---    Through BFS Traversal ---->
+                    // <---    CHEAK CYCLE DETECTION IN UNDIRECTED GRAPH ---->
+                    // <---    Through BFS Traversal ---->
 
 bool isCycle(int node, unordered_map<int,list<int>>&adjlist, unordered_map<int,bool>&visited){
 
@@ -46,11 +46,7 @@ bool isCycleGraph(vector<vector<int>>&Adj,int n,int m){
 
     for(int i=0;i<n;i++){
         if(!visited[i]){
-
-            bool ans=isCycle(i,adjlist,visited);
-            if(ans){
-                return 1;
-            }
+           return isCycle(i,adjlist,visited);
         }
     }
     return 0;
