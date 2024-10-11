@@ -67,7 +67,6 @@ int main(){
         Adj.push_back({u,v});
     }
     
-
     bool iscycle=isCycleGraph(Adj,n,m);
 
     if(iscycle==1){
