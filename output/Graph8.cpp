@@ -31,8 +31,7 @@ vector<int> TOPOSORT(vector<vector<int>>&adj, int v, int e)
             q.push(i);
         }
     }
-
-    // do bfs
+    // Here BFS 
     vector<int>ans;
     while(!q.empty()){
         int front=q.front();
@@ -65,7 +64,7 @@ int main(){
     }
     vector<int>ans=TOPOSORT(adj,n,m);
 
-    cout<<"TopoLogicalSort "<<endl;
+    cout<<"TopoLogicalSort Using Kahn's Algorithm : "<<endl;
     for(auto x:ans){
         cout<<x<< " ";
     }
