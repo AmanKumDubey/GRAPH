@@ -5,7 +5,7 @@ using namespace std ;
                 // <---    Through DFS Traversal ---->
 
 bool isCycleDFS(int node, int parent,unordered_map<int,bool>&visited,unordered_map<int,list<int>>&adjlist){
-;
+
     visited[node]=true;
     for(auto neighbour:adjlist[node]){
         if(!visited[neighbour]){
